@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 207, 134);
+
+    font-family: "Cause", cursive;
+    font-size: 16px;
+}
+
+.banner{
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    height: 125px;
+}
+
+.motd{
+    height: 300px;
+    display: grid;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.motd h1{
+    font-family: "Chango", sans-serif;
+    font-weight: 100;
+}
+
+.motd img{
+    height: 300px;
+}
+
+.kaomoji{
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+     font-style: normal;
+}
