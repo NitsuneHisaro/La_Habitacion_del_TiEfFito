@@ -1,9 +1,11 @@
+/*Elimina los márgenes y padeos default y ajusta los contenedores*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Aplica el color de fondo la letra por defecto*/
 body{
     background-color: rgb(228, 207, 134);
 
@@ -11,39 +13,111 @@ body{
     font-size: 16px;
 }
 
+/*---------Inicio del Banner---------------------*/
+
+/*Configuración del Banner*/
 .banner{
-    display: flex;
     width: 100vw;
-    height: 200px;
+    height: 110px;
     
-    justify-content: center;
-    align-items: center;
-}
-
-.banner img{
-    height: 125px;
-}
-
-.motd{
-    height: 300px;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
 
+/*Contenedor del Logo de Región*/
+.banner .sv_region{
+    height: 10.9vw;
+    width: 15.6vw;
+}
+
+/*Logo de Región*/
+.sv_region img{
+    width: 100%;
+}
+
+/*Contenedor del Banner*/
+.banner .sv_logo{
+    height: 14.1vw;
+    width: 43vw;
+}
+
+/*Logo del Server*/
+.sv_logo img{
+    width: 100%;
+}
+/*Fin del Banner*/
+
+/*----------------Inicio del mensaje del día-----------------------*/
+
+/*Cuerpo general de la página*/
+.page_content{
+    margin: 7.8vw auto;
+    width: 93.8vw;
+    height: 33.6vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Contenedor del Mensaje del Día*/
+.motd{    
+    margin: auto;
+    width: 66.4vw;
+
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Texto de Bienvenida*/
+.motd .welcome p{
+    font-family: "Chango", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/*Kaomoji*/
+.motd .kaomoji{
+    font-family: "Kiwi Maru", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+
+    margin: .5em 0px;
+}
+
+/*Mensaje del Día*/
+.motd .message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1em;
+}
+
+/*Firma del Admin*/
+.motd .signature{
+    font-weight: bold;
+
+    align-self: flex-end;
+}
+/*Fin del Mensaje del día*/
+
+/*---------------------GOKU------------------------*/
+
+.lateral_image{
+    width: 21.1vw;
+    height: 33.6vw;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.motd h1{
-    font-family: "Chango", sans-serif;
-    font-weight: 100;
-}
-
-.motd img{
-    height: 300px;
-}
-
-.kaomoji{
-    font-family: "Kiwi Maru", serif;
-    font-weight: 400;
-     font-style: normal;
+.lateral_image img{
+    height: 95%;
 }
